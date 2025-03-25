@@ -33,8 +33,8 @@ jobs:
         buildozer init  # اگر buildozer.spec نہیں بنی تو
         buildozer -v android debug
 
-    - name: APK کو GitHub پر اپلوڈ کرنا
-      uses: actions/upload-artifact@v3
-      with:
-        name: GoldApp-APK
-        path: bin/*.apk
+    - name: Upload APK
+  uses: actions/upload-artifact@v4
+  with:
+    name: Kivy-APK
+    path: path-to-your-apk-file
