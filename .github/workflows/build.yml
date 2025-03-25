@@ -1,4 +1,4 @@
-name: Build Kivy APK
+guyname: Build Kivy APK
 
 on:
   push:
@@ -37,4 +37,4 @@ jobs:
   uses: actions/upload-artifact@v4
   with:
     name: Kivy-APK
-    path: path-to-your-apk-file
+    path: bin/*.apk
